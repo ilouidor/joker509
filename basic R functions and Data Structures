@@ -1,0 +1,12 @@
+                  basic R functions and Data Structures
+
+Your assignment, evaluate the following function call myMean. The data for this function called assignment. 
+> assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+>myMean <- function(assignment2) { return(sum(assignment)/length(someData)) }
+
+
+#results# 
+
+myMean <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> return(sum(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)/length(sum)) 
+[1] 231
