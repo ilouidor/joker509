@@ -1,0 +1,55 @@
+
+
+
+##Writing function as matrix and data form set. comparing ABC polls, and NBC polls in the presidential elections. ##
+
+**Statement:***
+> Name <- c("Jeb", “Donald”, "Ted”, “Marco” “Carly”, “Hillary”, “Berine”)
+
+> ABC political poll results <- c(4, 62 51, 21, 2, 14, 15)
+
+> CBS political poll results <- c(12, 75, 43, 19, 1, 21, 19) 
+
+
+**Results***
+
+
+
+
+> name <-c("JEB", "DONALD", "TED", "MARCO", "CARLY", "HILARY", "BERNIE")
+> ABCpolls <- c(4,62,51,21,2,14,15)
+> NBCpolls <- c(12,75,43,19,1,21,19)
+>  grades <- cbind(name, ABCpolls, NBCpolls)
+> grades
+     name     ABCpolls NBCpolls
+[1,] "JEB"    "4"      "12"    
+[2,] "DONALD" "62"     "75"    
+[3,] "TED"    "51"     "43"    
+[4,] "MARCO"  "21"     "19"    
+[5,] "CARLY"  "2"      "1"     
+[6,] "HILARY" "14"     "21"    
+[7,] "BERNIE" "15"     "19"    
+> grades.df <- data.frame(name, ABCpolls, NBCpolls)
+> grades.df
+    name ABCpolls NBCpolls
+1    JEB        4       12
+2 DONALD       62       75
+3    TED       51       43
+4  MARCO       21       19
+5  CARLY        2        1
+6 HILARY       14       21
+7 BERNIE       15       19
+> 
+>mean(grades.df)
+[1] NA
+Warning message:
+In mean.default(grades.df) :
+  argument is not numeric or logical: returning NA
+> mean(grades.df[,2:3])
+[1] NA
+Warning message:
+In mean.default(grades.df[, 2:3]) :
+  argument is not numeric or logical: returning NA
+> mean.default(x[[1]])
+[1] -3
+
