@@ -1,0 +1,29 @@
+
+#Assigment 
+1.    "0.6","103","bad","low","low”
+2.     "0.3","87","bad","low","high”
+3.     "0.4","32","bad","high","low”
+4.      "0.4","42","bad","high","high"
+5.     "0.2","59","good","low","low”
+6.      "0.6","109","good","low","high”
+7.     "0.3","78","good","high","low”
+8.      "0.4","205","good","high","high”
+9.      "0.9","135",”NA","high","high"
+10.    "0.2","176",”bad","high","high”
+
+
+
+***Your first assignment: Create a side-by-side boxplot (boxplot(x, ...)) and and histogram ((hist(x, ...)). ***
+
+
+
+***Solution***
+
+>Frequency <- c(0.6,0.3,0.4,0.2,0.6,0.3,0.4,0.9,0.2)
+> BP <- c(103,87,32,42,59,109,78,205,135,176)
+> First <- c(1,1,1,0,0,0)
+> Second <- c(0,0,1,1,0,0,1,1)
+>  FinalDecision <- c(0,1,0,1,0,1,0,1,0,1)
+> boxplot(Frequency,BP)
+>  hist(BP,xlab = "Frequency", col="blue", border="orange")
+>#end of solution#
