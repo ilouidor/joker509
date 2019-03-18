@@ -1,0 +1,13 @@
+#first code for plotgraph
+data(mpg, package="ggplot2")
+ theme_set(theme_bw()) 
+g <- ggplot(mpg, aes(cty, hwy))
+ g <- ggplot(mpg, aes(cty, hwy))
+ g + geom_jitter(width = .5, size=1) + labs(subtitle="miles per gallon: City vs Highway mileage",  y="hwy",  x="cty", title="plotgraphs of mtcars")
+
+#second code 
+ data(mpg, package="ggplot2")
+ theme_set(theme_bw()) 
+ g <- ggplot(mpg, aes(cty, hwy))
+ g + geom_point() + geom_smooth(method="lm", se=F) +
+labs(subtitle="miles per gallon: city vs highway mileage", y="hwy", x="cty", title="scatteplot jitter with straight fit")
