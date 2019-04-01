@@ -1,0 +1,29 @@
+---
+title: "mtcarsmarkdown"
+author: "Idonel"
+date: "March 31, 2019"
+output: html_document
+runtime: shiny
+---
+#anaylzing Mtcars Data set in R
+
+
+**chunk1**
+  ```{r}
+  data(mtcars)
+str(mtcars)
+summary(mtcars)
+plot(mtcars)
+
+```
+**chunk2**
+```{r, chunk-label, results='hide', fig.height=4}
+hist(mtcars$cyl, col = 'red')
+boxplot(mtcars$hp)
+```
+
+
+##comment: this just demo preview of r markdown.
+
+
+#The END
